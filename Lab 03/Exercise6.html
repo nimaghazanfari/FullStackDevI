@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Article</title>
+    <link rel="stylesheet" href="styles/ex6.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <form action="" method="POST">
+        <fieldset>
+            <legend>Order Form</legend>
+
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" minlength="2" maxlength="100"
+                placeholder="Enter your name" required>
+
+            <label for="telephone">Telephone:</label>
+            <input type="text" id="telephone" name="telephone" minlength="10" maxlength="15"
+                pattern="[0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]" required
+                placeholder="Pattern: 1-234-567-8910">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" minlength="5" maxlength="100" required
+                placeholder="Enter your email address">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Emulators</legend>
+
+            <label for="qnt" class="inline">Quantity (Maximum 5):</label>
+            <input type="number" class="inline">
+
+            <input list="items" id="items-collector" name="items-collector">
+
+            <datalist id="items">
+                <option value="Ataria"></option>
+                <option value="Sega Genesis"></option>
+                <option value="Nintendo"></option>
+                <option value="Play Station"></option>
+                <option value="XBox"></option>
+            </datalist>
+            
+
+        </fieldset>
+
+        <button type="submit">
+            <i class="fa fa-save"></i>
+            Submit
+        </button>
+    </form>
+
+</body>
+
+</html>
