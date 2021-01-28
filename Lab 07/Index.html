@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    
+    <!-- minimum width is set -->
+    <div class="container">
+
+        <h1>
+            Payment
+        </h1>
+
+        <div class="main-content">
+            <h2 class="content-title">
+                Credit Card
+                <i class="fa fa-credit-card"></i>
+            </h2>
+
+            <hr/>
+
+            <div class="content-body">
+
+                <h4>
+                    Card Information
+                </h4>
+
+                <form action="#link-to-payment" method="POST">
+                    <!-- main table for separating panels -->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+
+                                    <div class="info-box">
+                                        <h5>New Card</h5>
+                                        <p>We accept the following cards:</p>
+
+                                        <img src="images/visa.jpg" alt="Visa">
+                                        <img src="images/mastercard.jpg" alt="MasterCard">
+                                        <img src="images/am-ex.jpg" alt="American Express">
+
+                                        <!-- inner table for building form parts -->
+                                        <table class="inner-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <label for="credit-card-no">Credit Card Number</label>
+                                                        <input type="text" 
+                                                               name="credit-card-no" id="credit-card-no" 
+                                                               required
+                                                               placeholder="Enter Visa, Mastercard, or AMEX">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label for="expiry-month">Expiry Month</label>
+                                                        <select name="expiry-month" id="expiry-month" required>
+                                                            <option value="">Choose Month</option>
+                                                            <option value="January">January</option>
+                                                            <option value="February">February</option>
+                                                            <option value="March">March</option>
+                                                            <option value="April">April</option>
+                                                            <option value="May">May</option>
+                                                            <option value="June">June</option>
+                                                            <option value="July">July</option>
+                                                            <option value="August">August</option>
+                                                            <option value="September">September</option>
+                                                            <option value="October">October</option>
+                                                            <option value="November">November</option>
+                                                            <option value="December">December</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <label for="expiry-year">Expiry Year</label>
+                                                        <select name="expiry-year" id="expiry-year" required>
+                                                            <option value="">Choose Year</option>
+                                                            <option value="2021">2021</option>
+                                                            <option value="2022">2022</option>
+                                                            <option value="2023">2023</option>
+                                                            <option value="2024">2024</option>
+                                                            <option value="2025">2025</option>
+                                                            <option value="2026">2026</option>
+                                                        </datalist>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <label for="ccv">CCV</label>
+                                                        <input type="text" 
+                                                               name="ccv" id="ccv" 
+                                                               required 
+                                                               pattern="^\d{3}|^\d{4}"
+                                                               placeholder="Enter CCV">
+                                                    </td>
+                                                    <td>
+                                                        <blockquote>
+                                                            This 3 or 4 digit code is on the back or front of your card
+                                                        </blockquote>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                
+                                </td>
+                                <td>
+
+                                    <div class="info-box">
+                                        <h3>Order Summary</h3>
+
+                                        <ul>
+                                            <li>
+                                                <label>Product Subtotal</label>
+                                                <label class="price">32.34</label>
+                                            </li>
+                                            <li>
+                                                <label>Estimated Shipping</label>
+                                                <label class="price">4.99</label>
+                                            </li>
+                                            <li>
+                                                <label>Estimated Taxes</label>
+                                                <label class="price">4.85</label>
+                                            </li>
+                                        </ul>
+
+                                        <hr/>
+
+                                        <ul>
+                                            <li>
+                                                <label>Estimated Total</label>
+                                                <label class="price">42.18</label>
+                                            </li>
+                                        </ul>
+
+                                        <button type="submit">
+                                            Proceed to checkout
+                                            <i class="fa fa-shopping-cart"></i>
+                                        </button>
+
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

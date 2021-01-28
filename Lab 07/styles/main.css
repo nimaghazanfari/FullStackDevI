@@ -1,0 +1,134 @@
+/*font-family fot all elements on the page */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: auto;
+}
+
+/*all inputs and selects*/
+input, select{
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    height: 48px;
+    padding: 12px;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+}
+
+/*all labels*/
+label{
+    color: #1d242c;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/*all buttons*/
+button{
+    width: 100%;
+    font-weight: bold;
+    background-color: #ffce00;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*all tables*/
+table{
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*all blockquotes*/
+blockquote{
+    font-size: small;
+    width: 55%;
+    margin-top: 25px;
+}
+
+blockquote::before, blockquote::after{
+    content: '"';
+}
+
+
+/*other classes*/
+
+.container{
+    background-color: lightgray;
+    padding: 5px;
+    min-width: 1000px;
+}
+
+.main-content{
+    border: 2px solid gray;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.content-title{
+    padding: 0 15px;
+}
+
+.content-body{
+    padding: 0 15px;
+}
+
+.content-body table td{
+    vertical-align: top;
+}
+
+.content-body table td:first-child{
+    width: 65%;
+}
+
+/*--------- left panel ---------*/
+
+.info-box{
+    padding: 10px;
+}
+
+.info-box .inner-table td{
+    padding: 0 45px 0 0;
+}
+
+.info-box h5{
+    margin: 0;
+}
+
+.info-box p{
+    font-size: 14px;
+    color: #1d242c;
+}
+
+.info-box img{
+    width: 45px;
+    margin: 0 5px;
+}
+
+/*-------------------------------*/
+
+
+/*--------- right panel ---------*/
+
+.info-box ul{
+    list-style: none;
+    padding: 0;
+}
+
+.info-box ul li{
+    margin-bottom: 10px;
+}
+
+.info-box ul label.price{
+    float: right;
+    font-weight: bold;
+}
+
+.info-box ul label.price::before{
+    content: '$';
+}
+
+.info-box button:hover{
+    background-color: #ffe885;
+}
+
+/*-------------------------------*/
